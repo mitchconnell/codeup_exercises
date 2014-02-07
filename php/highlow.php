@@ -3,6 +3,7 @@
 //create random numbers
 $random = mt_rand(1 , 100);
 
+$count = 0;
 //ask user to input numbers
 
 fwrite(STDOUT, "hey loser I'm thinking of a number\n");
@@ -20,12 +21,19 @@ do {
 	} else {
 
    		fwrite(STDOUT, "guess higher\n");
-    }
+    } 
+
+    $count++;
 
  	
 } while ($guess != $random);
 
-echo "winner\n"; 
+echo "winner\n";
+
+echo "You were wrong  $count  times\n"; 
+
+
+
 	
 
 //is it less than
