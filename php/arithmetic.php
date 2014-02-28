@@ -1,38 +1,44 @@
 <?php
 
 function add($a, $b) {
-    echo $a + $b . "\n";
+   
+  if (is_numeric($a) && is_numeric($b)) {
+        	return $a + $b . PHP_EOL;
+      } else {
+        	return NULL;
+ 			}
 }
 
 function subtract($a, $b) {
-    // Add code here
-		echo $a - $b . "\n";
+	if (is_numeric($a) && is_numeric($b)) {
+        	return $a - $b . PHP_EOL;
+      } else {
+        	return NULL;
+      }
 }
 
-function multiply($a, $b) {
-    // Add code here
-		echo $a * $b . "\n";
+function multiply($a, $b) {  
+	if (is_numeric($a) && is_numeric($b)) {
+        	return $a * $b . PHP_EOL;
+    	} else {
+        	return NULL;
+ 			}
 }
 
-function divide($a, $b) {
-    // Add code here
-		echo $a / $b . "\n";
-
+function divide($a, $b) {    	
+	if (is_numeric($a) && is_numeric($b)) {
+		if($b == 0) {
+		    	return false;
+			} else {
+					return $a / $b . PHP_EOL;
+			}
+			} else { 
+					return 0;	
+	    	
+	    }
 }
 
-function modulus($a, $b) {
-
-		echo $a % $b . "\n";
-
-}
-
-add(20,21);
-subtract(21,20);
-multiply(2,4);
-divide(3,7);
-modulus(5,9);		
-
-
+echo "False if divided by 0";
 
 ?>
 
