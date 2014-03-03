@@ -1,0 +1,6 @@
+$test = array('test', 'test2', 'test3');
+
+$test = array();
+$test[] = 'test';
+$test[] = 'test2';
+$test[] = 'test3';
